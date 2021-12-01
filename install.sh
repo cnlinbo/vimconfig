@@ -8,7 +8,8 @@ echo "$project_path/.vim -> $HOME/.vim"
 /bin/cp -r $project_path/.vim ~
 if [ "$1" == "desktop" ]; then
     echo "Downloading markdown-preview binary file..."
-    ~/.vim/plugged/markdown-preview.nvim/app/install.sh
+    cd ~/.vim/plugged/markdown-preview.nvim/app
+    ./install.sh
 fi
 echo "Install successfully!"
 
